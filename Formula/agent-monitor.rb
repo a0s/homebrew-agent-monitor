@@ -11,7 +11,7 @@ class AgentMonitor < Formula
   def install
     # Hooks run with whatever PATH the agent has, which need not include Homebrew's
     # bin; the opt path of node survives node upgrades where a Cellar path would not.
-    inreplace "bin/agent-monitor", "#!/usr/bin/env node", "#!#{Formula["node"].opt_bin}/node"
+    inreplace "bin/agent-monitor", "#!/usr/bin/env node", "#!#{formula_opt_bin("node")}/node"
     libexec.install "bin", "lib", "package.json"
     bin.install_symlink libexec/"bin/agent-monitor"
   end
