@@ -1,8 +1,8 @@
 class AgentMonitor < Formula
   desc "Live tree of the Codex and Claude Code agents working in a repository"
   homepage "https://github.com/a0s/agent-monitor"
-  url "https://github.com/a0s/agent-monitor/archive/refs/tags/v0.2.1.tar.gz"
-  sha256 "4f8c1fcd97b88f6320921ab0a56905ae97c519dcee27239cb5112f95421bef7a"
+  url "https://github.com/a0s/agent-monitor/archive/refs/tags/v0.2.2.tar.gz"
+  sha256 "23bb131d9c53ffa3334c3fd432f805d0e40e14ae7b3ad45cf02327cc890b66d5"
   license "MIT"
   head "https://github.com/a0s/agent-monitor.git", branch: "main"
 
